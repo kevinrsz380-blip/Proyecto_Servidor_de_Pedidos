@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>El Puesto de Kevin | Pedidos a domicilio</title>
+  <meta name="description" content="Servidor de pedidos para puesto de comida: pizza, sushi, pollo, tacos, hamburguesas y más, a domicilio.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛵</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body data-page="inicio">
+  <div id="nav"></div>
+  <main>
+    <div class="hero">
+      <h1>Servidor de pedidos<br>para puesto de comida</h1>
+      <p class="sub">Pizza, sushi, pollo, tacos y mucho más. Elige, pide y te lo llevamos a la puerta de tu casa.</p>
+      <span class="pill js-estado"><i></i>Revisando horario…</span>
+      <div class="grandes">
+        <a class="gran ancha" href="ordenes.html"><span>🧾 Órdenes</span><small>Tu pedido actual y tu historial</small></a>
+        <a class="gran ancha" href="menu.html"><span>🍽️ Seleccionar menú</span><small>Más de 35 platillos para elegir</small></a>
+        <a class="gran mini" href="horarios.html"><span>🕒 Horarios</span></a>
+        <a class="gran mini" href="soporte.html"><span>🛟 Ayuda con soporte</span></a>
+      </div>
+    </div>
+
+    <section aria-labelledby="fav">
+      <h2 id="fav">Los favoritos de la casa</h2>
+      <div class="grid" id="destacados"></div>
+      <p style="margin-top:18px"><a class="btn rosa" href="menu.html">Ver el menú completo</a></p>
+    </section>
+
+    <section aria-labelledby="como">
+      <h2 id="como">¿Cómo pedir? Es facilísimo</h2>
+      <div class="grid">
+        <div class="panel"><h3>1. Elige 🍕</h3><p>Entra al menú, filtra por categoría y agrega lo que se te antoje.</p></div>
+        <div class="panel"><h3>2. Confirma 📝</h3><p>En Órdenes revisa tu pedido, escribe tu domicilio y elige cómo vas a pagar.</p></div>
+        <div class="panel"><h3>3. Disfruta 🛵</h3><p>Sigue el estado de tu orden y recíbela en tu puerta. Envío gratis desde $400.</p></div>
+      </div>
+    </section>
+
+    <section aria-labelledby="donde">
+      <h2 id="donde">Dónde estamos</h2>
+      <div class="panel">
+        <p>📍 <strong>Calle 5ta, Col. Obrera, Zona Este #22566, Tijuana, B.C.</strong></p>
+        <p>👨‍🍳 Atiende: <strong>Kevin Roblero Sánchez</strong> · 📞 664 555 0142</p>
+        <p><a class="btn" href="soporte.html">Contactar a Kevin</a> <a class="btn claro" href="horarios.html">Ver horarios</a></p>
+      </div>
+    </section>
+  </main>
+  <div id="pie"></div>
+  <noscript><p style="padding:20px;text-align:center">Esta página necesita JavaScript para mostrar el menú y los pedidos.</p></noscript>
+  <script src="app.js"></script>
+</body>
+</html>

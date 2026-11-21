@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menú | El Puesto de Kevin</title>
+  <meta name="description" content="Menú completo: pizzas, sushi, pollo, tacos, hamburguesas, antojitos, bebidas y postres.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body data-page="menu">
+  <div id="nav"></div>
+  <main>
+    <h1>Menú disponible</h1>
+    <p style="margin:8px 0 22px">Toca <strong>Agregar +</strong> en lo que se te antoje y luego ve a <a href="ordenes.html">Órdenes</a> para confirmar. <span id="contador" class="nota"></span></p>
+    <div class="filtros">
+      <div class="chips" id="chips" role="group" aria-label="Categorías"></div>
+      <input class="buscar" id="buscar" type="search" placeholder="Buscar: pizza, picante, postre…" aria-label="Buscar en el menú">
+    </div>
+    <div class="grid" id="grid"></div>
+  </main>
+  <div id="pie"></div>
+  <noscript><p style="padding:20px;text-align:center">Esta página necesita JavaScript para mostrar el menú.</p></noscript>
+  <script src="app.js"></script>
+</body>
+</html>

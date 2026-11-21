@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Órdenes | El Puesto de Kevin</title>
+  <meta name="description" content="Revisa tu pedido, captura tu domicilio y confirma tu orden.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧾</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body data-page="ordenes">
+  <div id="nav"></div>
+  <main>
+    <h1>Órdenes</h1>
+    <p style="margin:8px 0 22px">Aquí ves tu pedido, pones tu domicilio y lo confirmas.</p>
+
+    <div class="ok" id="confirmacion" hidden></div>
+
+    <div class="cols">
+      <div>
+        <div class="panel">
+          <h2>Tu pedido</h2>
+          <div id="carrito"></div>
+        </div>
+        <div class="panel" style="margin-top:22px">
+          <h2>Tus órdenes anteriores</h2>
+          <p class="nota">El estado avanza solo (recibida → preparando → en camino → entregada) para simular el seguimiento del pedido.</p>
+          <div id="historial"></div>
+        </div>
+      </div>
+
+      <form class="panel" id="form" aria-labelledby="t-entrega">
+        <h2 id="t-entrega">Domicilio y pago</h2>
+        <div class="campo"><label for="cliente">Tu nombre</label><input id="cliente" required autocomplete="name" placeholder="Ej. Ana López"></div>
+        <div class="campo"><label for="tel">Teléfono</label><input id="tel" type="tel" required autocomplete="tel" placeholder="664 000 0000" pattern="[0-9 +()-]{8,}"></div>
+        <div class="campo"><label for="domicilio">Domicilio de entrega</label><input id="domicilio" required autocomplete="street-address" placeholder="Calle, colonia y número"></div>
+        <div class="campo"><label for="pago">Forma de pago</label>
+          <select id="pago"><option>Efectivo al recibir</option><option>Transferencia</option><option>Tarjeta contra entrega</option></select></div>
+        <div class="campo"><label for="notas">Notas para Kevin (opcional)</label><textarea id="notas" rows="2" placeholder="Sin cebolla, salsa aparte, tocar el timbre…"></textarea></div>
+        <div id="resumen"></div>
+        <button class="btn rosa" id="confirmar" type="submit" style="width:100%;margin-top:14px;padding:13px">Confirmar pedido</button>
+      </form>
+    </div>
+  </main>
+  <div id="pie"></div>
+  <noscript><p style="padding:20px;text-align:center">Esta página necesita JavaScript para funcionar.</p></noscript>
+  <script src="app.js"></script>
+</body>
+</html>

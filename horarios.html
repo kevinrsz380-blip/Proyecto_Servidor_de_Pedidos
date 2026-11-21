@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Horarios | El Puesto de Kevin</title>
+  <meta name="description" content="Días y horas de atención del puesto, y cómo llegar.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕒</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body data-page="horarios">
+  <div id="nav"></div>
+  <main>
+    <h1>Horarios</h1>
+    <p style="margin:8px 0 22px"><span class="pill js-estado"><i></i>Revisando horario…</span></p>
+    <div class="cols">
+      <div class="panel">
+        <h2>Días de atención</h2>
+        <table>
+          <thead><tr><th scope="col">Día</th><th scope="col">Horario</th></tr></thead>
+          <tbody id="tabla"></tbody>
+        </table>
+        <p class="nota" style="margin-top:12px">Pedidos a domicilio hasta 30 minutos antes de cerrar.</p>
+      </div>
+      <div class="panel">
+        <h2>Dónde estamos</h2>
+        <p>📍 <strong>Calle 5ta, Col. Obrera, Zona Este #22566</strong><br>Tijuana, Baja California</p>
+        <p>🛵 <strong>Zona de entrega:</strong> Zona Este y colonias cercanas, hasta 6 km a la redonda.</p>
+        <p>💵 <strong>Envío:</strong> $30 (gratis desde $400).</p>
+        <p>👨‍🍳 <strong>Atiende:</strong> Kevin Roblero Sánchez<br>📞 664 555 0142</p>
+        <p><a class="btn" id="mapa" target="_blank" rel="noopener" href="#">Abrir en el mapa</a></p>
+        <p class="nota">La dirección y el teléfono son ficticios, hechos para el proyecto escolar.</p>
+      </div>
+    </div>
+  </main>
+  <div id="pie"></div>
+  <noscript><p style="padding:20px;text-align:center">Esta página necesita JavaScript para funcionar.</p></noscript>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ayuda y soporte | El Puesto de Kevin</title>
+  <meta name="description" content="Preguntas frecuentes y contacto con Kevin Roblero Sánchez.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛟</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body data-page="soporte">
+  <div id="nav"></div>
+  <main>
+    <h1>Ayuda con soporte</h1>
+    <p style="margin:8px 0 22px">¿Dudas, problemas con tu pedido o quieres felicitar a la cocina? Escríbenos.</p>
+
+    <div class="contactos">
+      <div class="panel"><div class="em">👨‍🍳</div><h3>Kevin Roblero Sánchez</h3><p>Encargado del puesto</p></div>
+      <div class="panel"><div class="em">💬</div><h3>WhatsApp y teléfono</h3><p><a href="tel:+526645550142">664 555 0142</a></p><a class="btn verde" target="_blank" rel="noopener" href="https://wa.me/526645550142">Escribir por WhatsApp</a></div>
+      <div class="panel"><div class="em">✉️</div><h3>Correo</h3><p><a href="mailto:kevin.roblero@elpuestodekevin.example">kevin.roblero@elpuestodekevin.example</a></p><p class="nota">Respondemos en menos de 24 horas.</p></div>
+      <div class="panel"><div class="em">📸</div><h3>Instagram</h3><p>@elpuestodekevin</p><p class="nota">Promos y novedades del menú.</p></div>
+    </div>
+
+    <div class="cols" style="margin-top:36px">
+      <section style="margin-top:0">
+        <h2>Preguntas frecuentes</h2>
+        <details><summary>¿Cuánto tarda mi pedido?</summary><p>Normalmente entre 25 y 40 minutos, según lo que pidas y qué tan lejos estés. Los viernes y sábados por la noche puede tardar un poco más.</p></details>
+        <details><summary>¿Cuánto cuesta el envío?</summary><p>$30 pesos. Si tu pedido llega a $400 o más, el envío va por nuestra cuenta.</p></details>
+        <details><summary>¿Cómo puedo pagar?</summary><p>En efectivo al recibir, por transferencia o con tarjeta contra entrega. Avísanos al hacer el pedido si necesitas cambio.</p></details>
+        <details><summary>¿Puedo cambiar o cancelar mi pedido?</summary><p>Sí, siempre que todavía esté en estado “Recibida” o “Preparando”. Escríbenos por WhatsApp con tu folio.</p></details>
+        <details><summary>¿Tienen opciones vegetarianas o sin picante?</summary><p>Claro. En el menú busca la etiqueta <strong>Vegetariano</strong> o escribe “vegetariano” en el buscador. Si algo pica, tiene la etiqueta <strong>Picante</strong>.</p></details>
+        <details><summary>No me aparece mi pedido, ¿qué hago?</summary><p>El historial se guarda en tu navegador. Si cambiaste de celular, abriste modo incógnito o borraste los datos del navegador, no lo verás. Escríbenos con tu nombre y te ayudamos.</p></details>
+      </section>
+
+      <form class="panel" id="form-soporte">
+        <h2>Mándanos un mensaje</h2>
+        <div class="campo"><label for="s-nombre">Tu nombre</label><input id="s-nombre" required autocomplete="name"></div>
+        <div class="campo"><label for="s-asunto">Asunto</label>
+          <select id="s-asunto"><option>Duda sobre el menú</option><option>Problema con mi pedido</option><option>Cambiar o cancelar un pedido</option><option>Sugerencia</option><option>Otro</option></select></div>
+        <div class="campo"><label for="s-msg">Mensaje</label><textarea id="s-msg" rows="4" required placeholder="Cuéntanos qué pasó…"></textarea></div>
+        <button class="btn rosa" type="submit" style="width:100%;padding:13px">Enviar por WhatsApp</button>
+        <p class="nota" style="margin-top:10px">Se abrirá WhatsApp con tu mensaje listo para enviar.</p>
+      </form>
+    </div>
+  </main>
+  <div id="pie"></div>
+  <noscript><p style="padding:20px;text-align:center">Esta página necesita JavaScript para funcionar.</p></noscript>
+  <script src="app.js"></script>
+</body>
+</html>
